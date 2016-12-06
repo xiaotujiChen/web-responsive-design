@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+    background-color: #4a538a;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+li {
+    color: white;
+    display: inline;
+    font-weight: bold;
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+.banner {
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+}
+.content {
+    padding: 15px;
+}
+
+
+/******************
+ * DEFAULT STYLES *
+ ******************/
+
+@media screen and (min-width: 1201px) {
+    .column {
+        float: left;
+        width: 50%;
+    }
+    .item img {
+        float: left;
+        margin: 0 10px;
+        width: 200px;
+        max-width: 1201px;
+    }
+    .item {
+        height: 150px;
+        margin-top: 40px;
+    }
+    .item:last-of-type {
+        margin-bottom: 40px;
+    }
+    p {
+        margin: 0 auto;
+    }
+}
+
+
+/******************
+ * TABLET STYLES  *
+ ******************/
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .column {
+        float: none;
+        width: 100%;
+    }
+    .item img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+        min-width: 769px;
+    }
+   
+    .item p {
+        font-size: 1.25em;
+        margin: 40px 20px;
+    }
+}
+
+
+/******************
+ * MOBILE STYLES  *
+ ******************/
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .banner {
+        display: none;
+    }
+    .column {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .item {
+        border-bottom: 3px solid lightgrey;
+        height: inherit;
+    }
+    .item img {
+        display: none;
+        float: none;
+        margin: 0 auto;
+        width: 0%;
+        max-width: 0px;
+        min-width:0px;
+    }
+    ul {
+        background-color: white;
+    }
+    li {
+        border-bottom: 1px solid red;
+        color: red;
+        display: block;
+    }
+    p {
+        font-size: 1.5em;
+        margin: 10px auto;
+    }
+    .nav {
+        position: static;
+    }
+}
+
+
+/******************
+ *   OTHER STYLES  *
+ ******************/
+
+@media screen and (max-width: 480px) {
+    .banner {
+        display: none;
+    }
+    .column {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .item {
+        border-bottom: 3px solid lightgrey;
+        height: inherit;
+    }
+    .item img {
+        display: none;
+        float: none;
+        margin: 0 auto;
+        width: 0%;
+        max-width: 0px;
+        min-width:0px;
+    }
+    ul {
+        background-color: white;
+    }
+    li {
+        border-bottom: 1px solid red;
+        color: red;
+        display: block;
+    }
+    p {
+        font-size: 1.5em;
+        margin: 0 auto;
+    }
+    .nav {
+        position: static;
+    }
+}
